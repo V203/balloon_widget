@@ -15,8 +15,8 @@ function getBalloons() {
 
 let renderSVGs = (props)=>` <svg
 class='balloon-float'
-width="21mm"
-height="20mm"
+width="41mm"
+height="40mm"
 viewBox="0 0 210 297"
 version="1.1"
 id="svg5"
@@ -129,7 +129,7 @@ xmlns:svg="http://www.w3.org/2000/svg">
     rx="40.711967"
     ry="51.36689" />
  <ellipse
-    style="fill:${props.subsurface};fill-opacity:0.641429;stroke:url(#radialGradient18957);stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+    style="fill:${"white"};fill-opacity:0.641429;stroke:url(#radialGradient18957);stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
     id="path16769"
     cx="98.883476"
     cy="92.042183"
@@ -182,7 +182,7 @@ function displayBalloons(balloons = new Array()) {
         
         btn.addEventListener("click",()=> {
             modalView.style.display = 'flex';
-            modalHead.innerHTML = `${el.color} balloon`;
+            modalHead.innerHTML = `<h4> ${el.color} balloon </h4>`;
             modalBody.innerHTML = renderSVGs(el)
             modalDescription.innerHTML = `${el.description}`
             
