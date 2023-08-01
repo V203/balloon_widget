@@ -181,15 +181,14 @@ function displayBalloons(balloons = new Array()) {
         grid_header.innerHTML = `<h4> ${el.color.toUpperCase()} BALLOON<h4>`
         
         btn.addEventListener("click",()=> {
+         
             modalView.style.display = 'flex';
             modalHead.innerHTML = `<h4> ${el.color} balloon </h4>`;
             modalBody.innerHTML = renderSVGs(el)
             modalDescription.innerHTML = `${el.description}`
             
         })
-
         mainContainer.appendChild(grid_item)
-
     })
     
 }
