@@ -70,6 +70,21 @@ height: 20%;
     
 }
 
+.balloon-float {
+    animation: balloon-float infinite 2.5s;z-index: -1;
+  }
+  
+  @keyframes balloon-float {
+  
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-6px);
+    }
+  }
 
 .closeButton{
     display: flex;

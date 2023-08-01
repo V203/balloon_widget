@@ -14,6 +14,7 @@ function getBalloons() {
 }
 
 let renderSVGs = (props)=>` <svg
+class='balloon-float'
 width="21mm"
 height="20mm"
 viewBox="0 0 210 297"
@@ -97,7 +98,7 @@ xmlns:svg="http://www.w3.org/2000/svg">
     gradientTransform="matrix(0.64817231,0,0,0.5328851,320.9043,-103.09479)"
     gradientUnits="userSpaceOnUse" />
 </defs>
-<g
+<g class='balloon-float'
   inkscape:label="Layer 1"
   inkscape:groupmode="layer"
   id="layer1">
@@ -122,12 +123,13 @@ xmlns:svg="http://www.w3.org/2000/svg">
  <ellipse
     style="fill:${props.subsurface};fill-opacity:0.953601;stroke:url(#linearGradient16711);stroke-width:4.57276;stroke-dasharray:none;stroke-opacity:1"
     id="path16680"
+    
     cx="108.13753"
     cy="121.33881"
     rx="40.711967"
     ry="51.36689" />
  <ellipse
-    style="fill:#fff5f5;fill-opacity:0.641429;stroke:url(#radialGradient18957);stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+    style="fill:${props.subsurface};fill-opacity:0.641429;stroke:url(#radialGradient18957);stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
     id="path16769"
     cx="98.883476"
     cy="92.042183"
@@ -144,7 +146,7 @@ function displayBalloons(balloons = new Array()) {
         const grid_header = document.createElement("div");
         const grid_body = document.createElement("div");
         const grid_footer = document.createElement("div");
-        // const modalView = document.createElement("div");
+        
         let modalView = document.querySelector(".modalView");
         let closeButton = document.querySelector(".closeButton");
         const modalHead = document.querySelector(".modalHead")

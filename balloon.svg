@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
+<svg 
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
@@ -85,11 +85,11 @@
        gradientTransform="matrix(0.64817231,0,0,0.5328851,320.9043,-103.09479)"
        gradientUnits="userSpaceOnUse" />
   </defs>
-  <g
+  <g 
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <path
+    <path class="balloon-float"
        id="path13643"
        style="fill:#bd0000;fill-opacity:0.953601;stroke-width:0.245518"
        d="m 153.42863,120.82382 c 0,30.31824 -19.57202,54.89603 -43.71533,54.89603 -24.143307,0 -43.715324,-24.57779 -43.715324,-54.89603 0,-30.318235 19.572017,-54.896025 43.715324,-54.896025 24.14331,0 43.71533,24.57779 43.71533,54.896025 z"
